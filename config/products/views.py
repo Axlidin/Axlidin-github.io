@@ -6,4 +6,4 @@ from .models import Product
 
 class Products_show(ListView):
     model = Product
-    template_name = 'base.html'
+    template_name = 'index.html'
