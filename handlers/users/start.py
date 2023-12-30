@@ -21,9 +21,9 @@ async def start(message: types.Message):
         except asyncpg.exceptions.UniqueViolationError:
             pass
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton(text='Web saxifa',
+    markup.add(types.InlineKeyboardButton(text='Web saxifam',
               web_app=WebAppInfo(url='https://axlidin.github.io/')))
-    await message.answer('WebApp!',
+    await message.answer('Web App!',
                            reply_markup=markup)
 
 PRICE = {
