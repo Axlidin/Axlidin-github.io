@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shermatov blog</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&family=Smooch+Sans:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1><a href="">Shermatov Blog</a></h1>
+    </header>
+    <hr>
+    {% for post in object_list %}
+        <div class="post-entry">
+            <h2>
+                <a href="">
+                    {{ post.title }}
+                </a>
+            </h2>
+            <p>
+                {{ post.body | slice:":100" }}
+            </p>
+        </div>
+    {% endfor %}
+
+    {% block content %}
+    {% endblock content %}
+
+</body>
+</html>
