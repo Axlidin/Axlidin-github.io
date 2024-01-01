@@ -9,6 +9,7 @@ environs = "~=8.0.0"
 django = "*"
 psycopg2 = "*"
 asyncpg = "*"
+pillow = "*"
 
 [dev-packages]
 

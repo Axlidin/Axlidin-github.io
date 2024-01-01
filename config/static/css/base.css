@@ -17,12 +17,18 @@ body {
 }
 
 .img {
-	width: 150px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
+
 .item {
-	text-align: center;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
 }
+
 
 .btn {
 	display: inline-block;

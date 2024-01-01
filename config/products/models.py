@@ -13,7 +13,7 @@ class Product(models.Model):
     id = models.AutoField(primary_key=True)
     nomi = models.CharField(verbose_name="Mahsulot nomi", max_length=100)
     narhi = models.CharField(verbose_name="Mahsulot narhi", max_length=10)
-    rasmi = models.CharField(verbose_name="Mahsulot rasmi", max_length=300)
+    rasmi = models.ImageField(upload_to='images/', verbose_name="Mahsulot rasmi")
 
     def __str__(self):
         return f"№{self.id}--{self.nomi}--{self.narhi}"
