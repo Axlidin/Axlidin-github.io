@@ -22,7 +22,7 @@ async def start(message: types.Message):
             pass
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton(text='Web saxifam',
-              web_app=WebAppInfo(url="https://axlidin.github.io/")))
+              web_app=WebAppInfo(url="https://axlidin.github.io/config/templates/index.html")))
     await message.answer('Web App!',
                            reply_markup=markup)
 
